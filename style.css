@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #000;
+}
+
+div {
+  width: 50px;
+  height: 250px;
+  background: #b20710;
+  position: relative;
+}
+
+div::before {
+  content: " ";
+  width: 50px;
+  height: 250px;
+  background: #b20710;
+  position: absolute;
+  left: 90px;
+}
+
+div::after {
+  content: " ";
+  width: 175px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  bottom: -10px;
+  left: -15px;
+  border-radius: 50%;
+}
+
+span {
+  width: 50px;
+  height: 250px;
+  background: #e50914;
+  position: absolute;
+  left: 46px;
+  transform: skew(20deg);
+  box-shadow: 0 0 10px -4px #000;
+}
